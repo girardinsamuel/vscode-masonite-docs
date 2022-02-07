@@ -40,6 +40,7 @@ for url in sorted(set(links)):
             {
                 "topic": topic,
                 "slug": slug,
+                "category_slug": category,
                 "category": category.replace("-", " ").title(),
                 "command": "masoniteDocs"
                 + slug.replace("-", " ").title().replace(" ", ""),
@@ -89,12 +90,14 @@ with open(os.path.join(root, "../src/extension.ts"), "w+") as f:
             + "', () => {\n"
             + "        vscode.commands.executeCommand('vscode.open', "
             + "vscode.Uri.parse(baseUrl + '"
+            + page["category_slug"]
+            + "' + '/' + '"
             + page["slug"]
             + "'));\n"
             + "    });\n"
             + "    context.subscriptions.push("
             + page["command"]
-            + ");\n"
+            + ");\n",
         )
 
     f.write("\n}")
