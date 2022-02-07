@@ -2,7 +2,7 @@
     "name": "masonite-docs",
     "displayName": "Masonite Docs",
     "description": "Easily access MasoniteFramework documentation from within VS Code",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "icon": "img/icon.png",
     "publisher": "masonite-framework",
     "repository": "https://github.com/girardinsamuel/vscode-masonite-docs",
