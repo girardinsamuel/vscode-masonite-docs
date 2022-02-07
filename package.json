@@ -6,11 +6,16 @@
     "icon": "img/icon.jpg",
     "publisher": "masonite-framework",
     "repository": "https://github.com/girardinsamuel/vscode-masonite-docs",
+    "homepage": "https://docs.masoniteproject.com",
     "engines": {
         "vscode": "^1.63.0"
     },
     "categories": [
         "Other"
+    ],
+    "keywords": [
+        "Masonite",
+        "Documentation"
     ],
     "activationEvents": [
         "onCommand:extension.masoniteDocs",
