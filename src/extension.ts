@@ -3,8 +3,7 @@ import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
 
-    let version = vscode.workspace.getConfiguration("masoniteDocs").version;
-    let baseUrl = version ? `https://docs.masoniteproject.com/v/v${version}/` : 'https://docs.masoniteproject.com/';
+    let baseUrl = 'https://docs.masoniteproject.com/';
 
     let masoniteDocs = vscode.commands.registerCommand('extension.masoniteDocs', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + '' + '/' + ''));

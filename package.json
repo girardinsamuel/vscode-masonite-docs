@@ -59,26 +59,11 @@
     ],
     "main": "./out/extension",
     "contributes": {
-        "configuration": {
-            "type": "object",
-            "title": "Masonite Docs Configuration",
-            "properties": {
-                "laravelDocs.version": {
-                    "type": [
-                        "number",
-                        "string",
-                        "null"
-                    ],
-                    "default": "",
-                    "description": "Specify the version of the Masonite docs to use."
-                }
-            }
-        },
         "commands": [
             {
                 "command": "extension.masoniteDocs",
-                "category": "Masonite Docs ()",
-                "title": ""
+                "category": "Masonite Docs (Home)",
+                "title": "Home"
             },
             {
                 "command": "extension.masoniteDocsServiceContainer",

@@ -33,15 +33,20 @@ for url in sorted(set(links)):
     tokens = url.split("/")
     topic = tokens[-1].title().replace("-", " ")
     slug = tokens[-1]
-    category = tokens[1]
+    category_slug = tokens[1]
+    category = category_slug.replace("-", " ").title()
+    # home page
+    if not slug and not category:
+        category = "Home"
+        topic = "Home"
     if topic not in found:
         found.append(topic)
         pages.append(
             {
                 "topic": topic,
                 "slug": slug,
-                "category_slug": category,
-                "category": category.replace("-", " ").title(),
+                "category_slug": category_slug,
+                "category": category,
                 "command": "masoniteDocs"
                 + slug.replace("-", " ").title().replace(" ", ""),
             }
@@ -71,13 +76,7 @@ with open(os.path.join(root, "../src/extension.ts"), "w+") as f:
     f.write("'use strict';\n")
     f.write("import * as vscode from 'vscode';\n\n")
     f.write("export function activate(context: vscode.ExtensionContext) {\n\n")
-    f.write(
-        '    let version = vscode.workspace.getConfiguration("masoniteDocs").version;'
-        + "\n"
-    )
-    f.write(
-        "    let baseUrl = version ? `https://docs.masoniteproject.com/v/v${version}/` : 'https://docs.masoniteproject.com/';\n\n"
-    )
+    f.write("    let baseUrl = 'https://docs.masoniteproject.com/';\n\n")
 
     for page in pages:
         f.write(
