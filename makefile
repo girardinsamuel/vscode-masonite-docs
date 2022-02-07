@@ -11,3 +11,5 @@ package:
 local: ## Install package locally
 	code --uninstall-extension masonite-docs-0.1.0.vsix
 	code --install-extension masonite-docs-0.1.0.vsix
+login: ## Login on VS Code Marketplace
+	vsce login masonite-framework

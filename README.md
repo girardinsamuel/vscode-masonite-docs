@@ -16,3 +16,7 @@
 ## Inspiration / Credits
 
 [vscode-laravel-docs](https://github.com/austenc/vscode-laravel-docs)
+
+## Documentation for VS Code publishing
+
+[https://code.visualstudio.com/api/working-with-extensions/publishing-extension>](<https://code.visualstudio.com/api/working-with-extensions/publishing-extension>)
