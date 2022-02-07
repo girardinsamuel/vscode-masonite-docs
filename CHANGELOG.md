@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## v1.0.1
+
+- Update logo, demo and package meta data
+
 ## v1.0.0
 
 - Initial release for Masonite 4.0 docs
