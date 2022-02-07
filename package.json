@@ -1,0 +1,308 @@
+{
+    "name": "masonite-docs",
+    "displayName": "Masonite Docs",
+    "description": "Easily access MasoniteFramework documentation from within VS Code",
+    "version": "0.1.0",
+    "icon": "img/icon.jpg",
+    "publisher": "austenc",
+    "repository": "https://github.com/girardinsamuel/vscode-masonite-docs",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.masoniteDocs",
+        "onCommand:extension.masoniteDocsServiceContainer",
+        "onCommand:extension.masoniteDocsServiceProviders",
+        "onCommand:extension.masoniteDocsApi",
+        "onCommand:extension.masoniteDocsAuthentication",
+        "onCommand:extension.masoniteDocsAuthorization",
+        "onCommand:extension.masoniteDocsBroadcasting",
+        "onCommand:extension.masoniteDocsCache",
+        "onCommand:extension.masoniteDocsCommands",
+        "onCommand:extension.masoniteDocsCompilingAssets",
+        "onCommand:extension.masoniteDocsCsrf",
+        "onCommand:extension.masoniteDocsEvents",
+        "onCommand:extension.masoniteDocsFacades",
+        "onCommand:extension.masoniteDocsHashing",
+        "onCommand:extension.masoniteDocsHelpers",
+        "onCommand:extension.masoniteDocsMail",
+        "onCommand:extension.masoniteDocsNotifications",
+        "onCommand:extension.masoniteDocsPackageDevelopment",
+        "onCommand:extension.masoniteDocsQueues",
+        "onCommand:extension.masoniteDocsScheduling",
+        "onCommand:extension.masoniteDocsSessions",
+        "onCommand:extension.masoniteDocsTinker",
+        "onCommand:extension.masoniteDocsUploading",
+        "onCommand:extension.masoniteDocsValidation",
+        "onCommand:extension.masoniteDocsMasoniteDebugbar",
+        "onCommand:extension.masoniteDocsContributingGuide",
+        "onCommand:extension.masoniteDocsCreateABlog",
+        "onCommand:extension.masoniteDocsHowToContribute",
+        "onCommand:extension.masoniteDocsReleaseCycle",
+        "onCommand:extension.masoniteDocsCors",
+        "onCommand:extension.masoniteDocsConsoleTests",
+        "onCommand:extension.masoniteDocsDatabaseTests",
+        "onCommand:extension.masoniteDocsExtending",
+        "onCommand:extension.masoniteDocsGettingStarted",
+        "onCommand:extension.masoniteDocsHttpTests",
+        "onCommand:extension.masoniteDocsMocking",
+        "onCommand:extension.masoniteDocsControllers",
+        "onCommand:extension.masoniteDocsMiddleware",
+        "onCommand:extension.masoniteDocsRequest",
+        "onCommand:extension.masoniteDocsResponse",
+        "onCommand:extension.masoniteDocsRouting",
+        "onCommand:extension.masoniteDocsStaticFiles",
+        "onCommand:extension.masoniteDocsViews"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "configuration": {
+            "type": "object",
+            "title": "Masonite Docs Configuration",
+            "properties": {
+                "laravelDocs.version": {
+                    "type": [
+                        "number",
+                        "string",
+                        "null"
+                    ],
+                    "default": "",
+                    "description": "Specify the version of the Masonite docs to use."
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "extension.masoniteDocs",
+                "category": "Masonite Docs ()",
+                "title": ""
+            },
+            {
+                "command": "extension.masoniteDocsServiceContainer",
+                "category": "Masonite Docs (Architecture)",
+                "title": "Service Container"
+            },
+            {
+                "command": "extension.masoniteDocsServiceProviders",
+                "category": "Masonite Docs (Architecture)",
+                "title": "Service Providers"
+            },
+            {
+                "command": "extension.masoniteDocsApi",
+                "category": "Masonite Docs (Features)",
+                "title": "Api"
+            },
+            {
+                "command": "extension.masoniteDocsAuthentication",
+                "category": "Masonite Docs (Features)",
+                "title": "Authentication"
+            },
+            {
+                "command": "extension.masoniteDocsAuthorization",
+                "category": "Masonite Docs (Features)",
+                "title": "Authorization"
+            },
+            {
+                "command": "extension.masoniteDocsBroadcasting",
+                "category": "Masonite Docs (Features)",
+                "title": "Broadcasting"
+            },
+            {
+                "command": "extension.masoniteDocsCache",
+                "category": "Masonite Docs (Features)",
+                "title": "Cache"
+            },
+            {
+                "command": "extension.masoniteDocsCommands",
+                "category": "Masonite Docs (Features)",
+                "title": "Commands"
+            },
+            {
+                "command": "extension.masoniteDocsCompilingAssets",
+                "category": "Masonite Docs (Features)",
+                "title": "Compiling Assets"
+            },
+            {
+                "command": "extension.masoniteDocsCsrf",
+                "category": "Masonite Docs (Features)",
+                "title": "Csrf"
+            },
+            {
+                "command": "extension.masoniteDocsEvents",
+                "category": "Masonite Docs (Features)",
+                "title": "Events"
+            },
+            {
+                "command": "extension.masoniteDocsFacades",
+                "category": "Masonite Docs (Features)",
+                "title": "Facades"
+            },
+            {
+                "command": "extension.masoniteDocsHashing",
+                "category": "Masonite Docs (Features)",
+                "title": "Hashing"
+            },
+            {
+                "command": "extension.masoniteDocsHelpers",
+                "category": "Masonite Docs (Features)",
+                "title": "Helpers"
+            },
+            {
+                "command": "extension.masoniteDocsMail",
+                "category": "Masonite Docs (Features)",
+                "title": "Mail"
+            },
+            {
+                "command": "extension.masoniteDocsNotifications",
+                "category": "Masonite Docs (Features)",
+                "title": "Notifications"
+            },
+            {
+                "command": "extension.masoniteDocsPackageDevelopment",
+                "category": "Masonite Docs (Features)",
+                "title": "Package Development"
+            },
+            {
+                "command": "extension.masoniteDocsQueues",
+                "category": "Masonite Docs (Features)",
+                "title": "Queues"
+            },
+            {
+                "command": "extension.masoniteDocsScheduling",
+                "category": "Masonite Docs (Features)",
+                "title": "Scheduling"
+            },
+            {
+                "command": "extension.masoniteDocsSessions",
+                "category": "Masonite Docs (Features)",
+                "title": "Sessions"
+            },
+            {
+                "command": "extension.masoniteDocsTinker",
+                "category": "Masonite Docs (Features)",
+                "title": "Tinker"
+            },
+            {
+                "command": "extension.masoniteDocsUploading",
+                "category": "Masonite Docs (Features)",
+                "title": "Uploading"
+            },
+            {
+                "command": "extension.masoniteDocsValidation",
+                "category": "Masonite Docs (Features)",
+                "title": "Validation"
+            },
+            {
+                "command": "extension.masoniteDocsMasoniteDebugbar",
+                "category": "Masonite Docs (Official Packages)",
+                "title": "Masonite Debugbar"
+            },
+            {
+                "command": "extension.masoniteDocsContributingGuide",
+                "category": "Masonite Docs (Prologue)",
+                "title": "Contributing Guide"
+            },
+            {
+                "command": "extension.masoniteDocsCreateABlog",
+                "category": "Masonite Docs (Prologue)",
+                "title": "Create A Blog"
+            },
+            {
+                "command": "extension.masoniteDocsHowToContribute",
+                "category": "Masonite Docs (Prologue)",
+                "title": "How To Contribute"
+            },
+            {
+                "command": "extension.masoniteDocsReleaseCycle",
+                "category": "Masonite Docs (Prologue)",
+                "title": "Release Cycle"
+            },
+            {
+                "command": "extension.masoniteDocsCors",
+                "category": "Masonite Docs (Security)",
+                "title": "Cors"
+            },
+            {
+                "command": "extension.masoniteDocsConsoleTests",
+                "category": "Masonite Docs (Testing)",
+                "title": "Console Tests"
+            },
+            {
+                "command": "extension.masoniteDocsDatabaseTests",
+                "category": "Masonite Docs (Testing)",
+                "title": "Database Tests"
+            },
+            {
+                "command": "extension.masoniteDocsExtending",
+                "category": "Masonite Docs (Testing)",
+                "title": "Extending"
+            },
+            {
+                "command": "extension.masoniteDocsGettingStarted",
+                "category": "Masonite Docs (Testing)",
+                "title": "Getting Started"
+            },
+            {
+                "command": "extension.masoniteDocsHttpTests",
+                "category": "Masonite Docs (Testing)",
+                "title": "Http Tests"
+            },
+            {
+                "command": "extension.masoniteDocsMocking",
+                "category": "Masonite Docs (Testing)",
+                "title": "Mocking"
+            },
+            {
+                "command": "extension.masoniteDocsControllers",
+                "category": "Masonite Docs (The Basics)",
+                "title": "Controllers"
+            },
+            {
+                "command": "extension.masoniteDocsMiddleware",
+                "category": "Masonite Docs (The Basics)",
+                "title": "Middleware"
+            },
+            {
+                "command": "extension.masoniteDocsRequest",
+                "category": "Masonite Docs (The Basics)",
+                "title": "Request"
+            },
+            {
+                "command": "extension.masoniteDocsResponse",
+                "category": "Masonite Docs (The Basics)",
+                "title": "Response"
+            },
+            {
+                "command": "extension.masoniteDocsRouting",
+                "category": "Masonite Docs (The Basics)",
+                "title": "Routing"
+            },
+            {
+                "command": "extension.masoniteDocsStaticFiles",
+                "category": "Masonite Docs (The Basics)",
+                "title": "Static Files"
+            },
+            {
+                "command": "extension.masoniteDocsViews",
+                "category": "Masonite Docs (The Basics)",
+                "title": "Views"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.33"
+    }
+}
