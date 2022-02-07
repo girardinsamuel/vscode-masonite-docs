@@ -1,6 +1,8 @@
 # vscode-masonite-docs
 
-[WIP] VS Code extension to open Masonite documentation easily.
+Open Masonite documentation directly from your code.
+
+To use this extension, open the command palette and search for "Masonite Docs" or the specific topic you're looking for.
 
 ![](img/preview.gif)
 
@@ -16,7 +18,3 @@
 ## Inspiration / Credits
 
 [vscode-laravel-docs](https://github.com/austenc/vscode-laravel-docs)
-
-## Documentation for VS Code publishing
-
-[https://code.visualstudio.com/api/working-with-extensions/publishing-extension>](<https://code.visualstudio.com/api/working-with-extensions/publishing-extension>)
