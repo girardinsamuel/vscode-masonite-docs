@@ -2,7 +2,7 @@
     "name": "masonite-docs",
     "displayName": "Masonite Docs",
     "description": "Easily access MasoniteFramework documentation from within VS Code",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icon": "img/icon.png",
     "publisher": "masonite-framework",
     "repository": "https://github.com/girardinsamuel/vscode-masonite-docs",
@@ -30,6 +30,7 @@
         "onCommand:extension.masoniteDocsCompilingAssets",
         "onCommand:extension.masoniteDocsCsrf",
         "onCommand:extension.masoniteDocsEvents",
+        "onCommand:extension.masoniteDocsExceptions",
         "onCommand:extension.masoniteDocsFacades",
         "onCommand:extension.masoniteDocsHashing",
         "onCommand:extension.masoniteDocsHelpers",
@@ -48,6 +49,7 @@
         "onCommand:extension.masoniteDocsHowToContribute",
         "onCommand:extension.masoniteDocsReleaseCycle",
         "onCommand:extension.masoniteDocsCors",
+        "onCommand:extension.masoniteDocsCommandsTests",
         "onCommand:extension.masoniteDocsConsoleTests",
         "onCommand:extension.masoniteDocsDatabaseTests",
         "onCommand:extension.masoniteDocsExtending",
@@ -55,6 +57,7 @@
         "onCommand:extension.masoniteDocsHttpTests",
         "onCommand:extension.masoniteDocsMocking",
         "onCommand:extension.masoniteDocsControllers",
+        "onCommand:extension.masoniteDocsEnvironments",
         "onCommand:extension.masoniteDocsMiddleware",
         "onCommand:extension.masoniteDocsRequest",
         "onCommand:extension.masoniteDocsResponse",
@@ -124,6 +127,11 @@
                 "command": "extension.masoniteDocsEvents",
                 "category": "Masonite Docs (Features)",
                 "title": "Events"
+            },
+            {
+                "command": "extension.masoniteDocsExceptions",
+                "category": "Masonite Docs (Features)",
+                "title": "Exceptions"
             },
             {
                 "command": "extension.masoniteDocsFacades",
@@ -216,6 +224,11 @@
                 "title": "Cors"
             },
             {
+                "command": "extension.masoniteDocsCommandsTests",
+                "category": "Masonite Docs (Testing)",
+                "title": "Commands Tests"
+            },
+            {
                 "command": "extension.masoniteDocsConsoleTests",
                 "category": "Masonite Docs (Testing)",
                 "title": "Console Tests"
@@ -249,6 +262,11 @@
                 "command": "extension.masoniteDocsControllers",
                 "category": "Masonite Docs (The Basics)",
                 "title": "Controllers"
+            },
+            {
+                "command": "extension.masoniteDocsEnvironments",
+                "category": "Masonite Docs (The Basics)",
+                "title": "Environments"
             },
             {
                 "command": "extension.masoniteDocsMiddleware",

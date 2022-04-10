@@ -53,6 +53,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + 'features' + '/' + 'events'));
     });
     context.subscriptions.push(masoniteDocsEvents);
+    let masoniteDocsExceptions = vscode.commands.registerCommand('extension.masoniteDocsExceptions', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + 'features' + '/' + 'exceptions'));
+    });
+    context.subscriptions.push(masoniteDocsExceptions);
     let masoniteDocsFacades = vscode.commands.registerCommand('extension.masoniteDocsFacades', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + 'features' + '/' + 'facades'));
     });
@@ -125,6 +129,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + 'security' + '/' + 'cors'));
     });
     context.subscriptions.push(masoniteDocsCors);
+    let masoniteDocsCommandsTests = vscode.commands.registerCommand('extension.masoniteDocsCommandsTests', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + 'testing' + '/' + 'commands-tests'));
+    });
+    context.subscriptions.push(masoniteDocsCommandsTests);
     let masoniteDocsConsoleTests = vscode.commands.registerCommand('extension.masoniteDocsConsoleTests', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + 'testing' + '/' + 'console-tests'));
     });
@@ -153,6 +161,10 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + 'the-basics' + '/' + 'controllers'));
     });
     context.subscriptions.push(masoniteDocsControllers);
+    let masoniteDocsEnvironments = vscode.commands.registerCommand('extension.masoniteDocsEnvironments', () => {
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + 'the-basics' + '/' + 'environments'));
+    });
+    context.subscriptions.push(masoniteDocsEnvironments);
     let masoniteDocsMiddleware = vscode.commands.registerCommand('extension.masoniteDocsMiddleware', () => {
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baseUrl + 'the-basics' + '/' + 'middleware'));
     });
